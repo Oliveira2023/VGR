@@ -43,11 +43,12 @@ body {
     margin: 5px auto;
 }
 .gallery {
-    flex: 0 1 280px;
+    flex: 1 1 180px;
+
 }
 div.gallery img {
     width: 100%;
-    height: auto;
+    height: 90%;
     border-radius: 8px;
 }
 .gallery p {
@@ -114,12 +115,19 @@ div.descrip {
 #secao3 {
     display: flex;
     max-width: 1200px;
-    list-style-type: none;
-    
 }
+
 #secao3 > div {
     max-width: 400px;
-    
+}
+.visite img {
+    width: 50px;
+}
+.visite a {
+    text-decoration: none;
+}
+#estoque-pg-home li{
+    font-size: 0.5em;
 }
 footer >nav {
     background-color: #bd9e63;
@@ -132,4 +140,12 @@ footer > div {
     color: #b2adad;
     text-align: center;
     height: 50px;
+}
+/*exclusivo loja*/
+#maps {
+    display: flex;
+    flex: 1 1 280px;
+    background-color: black;
+    max-width: 1000px;
+    padding: 20px;
 }
