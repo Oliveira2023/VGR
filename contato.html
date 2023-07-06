@@ -32,8 +32,27 @@
         </nav>
     </header>
     <h1>Entre em contato</h1>
-    <form action="send" method="post">
-        formulario
+    <form action="send" method="post" autocomplete="on">
+        <div>
+            <label for="name">Nome</label>
+            <input type="text" name="nome" id="name">
+        </div>
+        <div>
+            <label for="mail">E-mail</label>
+            <input type="email" name="email" id="mail">
+        </div>
+        <div>
+            <label for="fone">Telefone</label>
+            <input type="tel" name="tel" id="fone">
+        </div>
+        <div>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </div>
+
     </form>
     <footer>
         <nav>navigation links</nav>
