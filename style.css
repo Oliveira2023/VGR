@@ -182,9 +182,11 @@ div .descrip {
 
 footer >nav {
     background-color: #bd9e63;
-    color: #eaf1f1;
     text-align: center;
-    height: 50px;
+    height: 35px;
+    padding: 10px;
+    width: 30%;
+    border-radius: 35px;
 }
 footer > div {
     text-align: center;
@@ -195,18 +197,6 @@ footer > div {
     height: 55px;
 }
 
-footer nav{
-    padding: 10px;
-    height: 35px;
-    width: 30%;
-    border-radius: 35px;
+footer nav a{
     text-decoration: none;
-}
-
-#maps {
-    display: flex;
-    flex: 1 1 280px;
-    background-color: black;
-    max-width: 1000px;
-    padding: 20px;
 }
