@@ -10,8 +10,11 @@
     <link rel="icon" href="favicon2.ico" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poltawski+Nowy:wght@600&display=swap');
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sriracha&display=swap');
+    
 
-        h1 {
+    h1 {
     text-align: center;
     color: #F7941D;
     }
@@ -19,18 +22,31 @@
 
         display: flex;
         grid-template-columns: repeat(4, 1fr);
-        background-color: rgba(0, 0, 0, 0.253);
         flex-wrap: wrap;
         flex-shrink: 1;
-        margin: 5px auto;
+        margin: 10px auto;
         max-width: 1050px;
-
+        gap: 8px;
+        justify-content: center;
     }
 
     #grade-veiculos div > img {
         width: 250px;
-        margin: 5px auto 0px auto;
+        
+    }
+    #grade-veiculos div > p {
+        border-radius: 0px;
+        margin-top: -10px;
         padding: 10px;
+        
+        font-weight: bold;
+        font-size: 10px;
+        background-color: white;
+        color: rgb(59, 59, 59);
+    }
+    #grade-veiculos div > p >b {
+        font-size: medium;
+        
     }
     #frame1{
         cursor: pointer;
@@ -50,18 +66,116 @@
     </header>
     <h1>Encontre seu carro</h1>
     <section id="grade-veiculos">
-        <div id="frame1" onclick="cardetails()"><img src="Imagem do WhatsApp de 2023-04-25 à(s) 13.35..jpg" alt=""></div>
-        <div><img src="Imagem do WhatsApp de 2023-04-25 à(s) 13.35..jpg" alt=""></div>
-        <div><img src="Imagem do WhatsApp de 2023-04-25 à(s) 13.35..jpg" alt=""></div>
-        <div><img src="Imagem do WhatsApp de 2023-04-25 à(s) 13.35..jpg" alt=""></div>
-        <div><img src="Imagem do WhatsApp de 2023-04-25 à(s) 13.35..jpg" alt=""></div>
-        <div><img src="Imagem do WhatsApp de 2023-04-25 à(s) 13.35..jpg" alt=""></div>
-        <div><img src="Imagem do WhatsApp de 2023-04-25 à(s) 13.35..jpg" alt=""></div>
-        <div><img src="Imagem do WhatsApp de 2023-04-25 à(s) 13.35..jpg" alt=""></div>
-        <div><img src="Imagem do WhatsApp de 2023-04-25 à(s) 13.35..jpg" alt=""></div>
-        <div><img src="Imagem do WhatsApp de 2023-04-25 à(s) 13.35..jpg" alt=""></div>
-        <div><img src="Imagem do WhatsApp de 2023-04-25 à(s) 13.35..jpg" alt=""></div>
-        <div><img src="Imagem do WhatsApp de 2023-04-25 à(s) 13.35..jpg" alt=""></div>
+        <div id="frame1" onclick="cardetails()">
+        <img src="midia/fiesta20.jpg" alt="">
+        <p class="descrip"><b>Ford FIESTA</b><br>
+            2015 1.6 TI-Flex Titanium<br>
+            Automatico 72.085km<br>
+            
+            <span class="precio">R$ 122.490</span><br>
+            <span class="corte-preço">R$ 128.990</span>
+        </p>
+        </div>
+        <div>
+            <img class="list-of-cars" src="midia/fiesta20.jpg">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                2015 1.6 TI-Flex Titanium<br>
+            Automatico 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div><img src="midia/fiesta20.jpg" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                2015 1.6 TI-Flex Titanium<br>
+            Automatico 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div><img src="midia/fiesta20.jpg" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                2015 1.6 TI-Flex Titanium<br>
+            Automatico 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div><img src="midia/fiesta20.jpg" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div><img src="midia/fiesta20.jpg" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div><img src="midia/fiesta20.jpg" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div><img src="midia/fiesta20.jpg" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div><img src="midia/fiesta20.jpg" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div><img src="midia/fiesta20.jpg" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div><img src="midia/fiesta20.jpg" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div><img src="midia/fiesta20.jpg" alt="">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                1.6 TI-Flex TITANIUM<br>
+                AUTOMATICO 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
         
        
     </section>

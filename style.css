@@ -121,6 +121,11 @@ div.gallery:hover {
 }
 .corte-preço{
     text-decoration: line-through;
+    color: darkgray;
+}
+.precio {
+    color:#3374DB;
+    font-size: 12px;
 }
 
 #qsomos {
