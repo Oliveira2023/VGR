@@ -77,11 +77,12 @@ div.gallery:hover {
     border: 2px solid #b2adad;
     border-radius: 8px;
 }
-#vgr{
+.vgr{
     font-family: vgr;
     font-style: italic;
     font-weight: 80;
     font-size: larger;
+    color: #F7941D;
 }
 #bemvindos {
     text-align: center;
