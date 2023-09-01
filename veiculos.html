@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veiculos</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="stylev.css">
+    
     <link rel="icon" href="favicon2.ico" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poltawski+Nowy:wght@600&display=swap');
@@ -31,13 +31,8 @@
     }
     #grade-veiculos div > img {
         width: 250px;
-        
-    }
+     }
 
-    #grade-veiculos div > a > img {
-        width: 250px;
-        
-    }
     #grade-veiculos div > p {
         border-radius: 0px;
         margin-top: -10px;
@@ -70,8 +65,8 @@
     </header>
     <h1>Encontre seu carro</h1>
     <section id="grade-veiculos">
-        <div id="frame1" onclick="cardetails()">
-        <a href="veiculoSelecionado.html"><img src="midia/fiesta20.jpg" alt=""></a>
+        <div id="frame1" onclick="cardetails('car-1')">
+        <img src="midia/fiesta20.jpg" alt="">
         <p class="descrip"><b>Ford FIESTA</b><br>
             2015 1.6 TI-Flex Titanium<br>
             Automatico 72.085km<br>
@@ -80,8 +75,18 @@
             <span class="corte-preço">R$ 128.990</span>
         </p>
         </div>
-        <div>
-            <img class="list-of-cars" src="midia/fiesta20.jpg">
+        <div id="frame2" onclick="cardetails('car-2')">
+            <img class="list-of-cars" src="midia/hb20Frente450.jpg">
+            <p class="descrip"><b>Ford FIESTA</b><br>
+                2015 1.6 TI-Flex Titanium<br>
+            Automatico 72.085km<br>
+                
+                <span class="precio">R$ 122.490</span><br>
+                <span class="corte-preço">R$ 128.990</span>
+            </p>
+        </div>
+        <div id="frame3" onclick="actionOnSlide('car-3')">
+            <img src="midia/fiesta20.jpg" alt="">
             <p class="descrip"><b>Ford FIESTA</b><br>
                 2015 1.6 TI-Flex Titanium<br>
             Automatico 72.085km<br>
@@ -101,15 +106,6 @@
         </div>
         <div><img src="midia/fiesta20.jpg" alt="">
             <p class="descrip"><b>Ford FIESTA</b><br>
-                2015 1.6 TI-Flex Titanium<br>
-            Automatico 72.085km<br>
-                
-                <span class="precio">R$ 122.490</span><br>
-                <span class="corte-preço">R$ 128.990</span>
-            </p>
-        </div>
-        <div><img src="midia/fiesta20.jpg" alt="">
-            <p class="descrip"><b>Ford FIESTA</b><br>
                 1.6 TI-Flex TITANIUM<br>
                 AUTOMATICO 72.085km<br>
                 
@@ -180,8 +176,9 @@
                 <span class="corte-preço">R$ 128.990</span>
             </p>
         </div>
-        
-       
     </section>
+    <script src="veiculoscontrol.js"></script>
+    
+    
 </body>
 </html>

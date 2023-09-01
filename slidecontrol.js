@@ -1,3 +1,102 @@
+let veiculo1 = {
+    nome: 'Ford New Fiesta Hatch 2020',
+    ano: 2020,
+    valor: "42000,00",
+    slide1: 'midia/fiesta20red600.jpg',
+    slide2: "midia/fiesta-frente-dir.jpg",
+    slide3: "midia/fiesta-frentelateral-esquerda.jpg",
+    slide4: "midia/fiesta-frente-dir.jpg",
+    slide5: "midia/fiesta-rodaesquerda.jpg",
+    slide6: "midia/fiesta-trazeira.jpg",
+    thumb1: "midia/fiesta20.jpg",
+    thumb2: "midia/fiesta-frente-dir.jpg",
+    thumb3: 'midia/fiesta-frentelateral-esquerda.jpg',
+    thumb4: 'midia/fiesta-frente-dir.jpg',
+    thumb5: 'midia/fiesta-rodaesquerda.jpg',
+    thumb6: 'midia/fiesta-trazeira.jpg'
+}
+
+let veiculo2 = {
+    nome: 'Onix',
+    ano: 2021,
+    valor: 'R$ 54.000,00',
+    slide1: 'midia/hb20frente600x400.jpg',
+    slide2: 'midia/hb20Painel600x400.jpg',
+    slide3: 'midia/hb20LatDir600x400.jpg',
+    slide4: 'midia/hb20moto600x400.jpg',
+    slide5: 'midia/hb20RodaE600x400.jpg',
+    slide6: 'midia/hb20Traz600x400.jpg',
+    thumb1: 'midia/hb20frente600x400.jpg',
+    thumb2: 'midia/hb20Painel600x400.jpg',
+    thumb3: 'midia/hb20LatDir600x400.jpg',
+    thumb4: 'midia/hb20moto600x400.jpg',
+    thumb5: 'midia/hb20RodaE600x400.jpg',
+    thumb6: 'midia/hb20Traz600x400.jpg'
+}
+
+
+console.log('load carro selecionado')
+let veiculoSelecionado = sessionStorage.getItem('carro')
+
+//car-1
+let nVeiculo = veiculoSelecionado.split('-')[1]
+let veiculo = 'veiculo' + nVeiculo
+let imagem = 'imagem' + nVeiculo
+let slide = 'slide' + nVeiculo
+console.log('N:', nVeiculo)
+console.log(veiculo=='veiculo1')
+if (veiculo=='veiculo1'){veiculo=veiculo1}
+if (veiculo=='veiculo2'){veiculo=veiculo2}
+if (veiculo=='veiculo3'){veiculo=veiculo3}
+if (veiculo=='veiculo4'){veiculo=veiculo4}
+if (veiculo=='veiculo5'){veiculo=veiculo5}
+if (veiculo=='veiculo6'){veiculo=veiculo6}
+if (veiculo=='veiculo7'){veiculo=veiculo7}
+if (veiculo=='veiculo8'){veiculo=veiculo8}
+if (veiculo=='veiculo9'){veiculo=veiculo9}
+if (veiculo=='veiculo10'){veiculo=veiculo10}
+
+
+let imagem1 = document.querySelector("#foto1")
+imagem1.setAttribute('src', veiculo.slide1)
+
+let imagem2 = document.querySelector("#foto2")
+imagem2.setAttribute('src', veiculo.slide2)
+
+let imagem3 = document.querySelector("#foto3")
+imagem3.setAttribute('src', veiculo.slide3)
+
+let imagem4 = document.querySelector("#foto4")
+imagem4.setAttribute('src', veiculo.slide4)
+
+let imagem5 = document.querySelector("#foto5")
+imagem5.setAttribute('src', veiculo.slide5)
+
+let imagem6 = document.querySelector("#foto6")
+imagem6.setAttribute('src', veiculo.slide6)
+
+// imagens miniaturas
+
+let thumb1 = document.querySelector('#thumb1')
+thumb1.setAttribute('src', veiculo.thumb1)
+
+let thumb2 = document.querySelector('#thumb2')
+thumb2.setAttribute('src', veiculo.thumb2)
+
+let thumb3 = document.querySelector('#thumb3')
+thumb3.setAttribute('src', veiculo.thumb3)
+
+let thumb4 = document.querySelector('#thumb4')
+thumb4.setAttribute('src', veiculo.thumb4)
+
+let thumb5 = document.querySelector('#thumb5')
+thumb5.setAttribute('src', veiculo.thumb5)
+
+let thumb6 = document.querySelector('#thumb6')
+thumb6.setAttribute('src', veiculo.thumb6)
+
+
+//codigo do slide control//
 let slideIndex = 1
 showSlides(slideIndex)
 
@@ -32,5 +131,8 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = 'block'
     demo[slideIndex -1].className += ' active'
     dot[slideIndex -1].className += ' active'
-    //captionText.innerHTML = demo[slideIndex-1].alt
+    
 }
+// codigo do slide controll//
+
+

@@ -137,7 +137,7 @@
             color: white;
             float: left;
             width: 35%;
-            background-color: rgb(17, 0, 255);
+            background-color: rgb(68, 59, 193);
             min-height: 545px;
         }
         #car-info:first-child{
@@ -169,28 +169,28 @@
           <!-- Full-width images with number text -->
         <div class="mySlides">
             <div class="numbertext">1/6</div>
-            <img src="midia/fiesta20red600.jpg" style="width: 100%" alt="FOTO">
+            <img id="foto1" src="" style="width: 100%" alt="FOTO">
             
         </div>
         <div class="mySlides">
             <div class="numbertext">2/6</div>
-            <img src="midia/fiesta-frente-dir.jpg" style="width: 100%" alt="FOTO">
+            <img id="foto2" src="" style="width: 100%" alt="FOTO">
         </div>
         <div class="mySlides">
             <div class="numbertext">3/6</div>
-            <img src="midia/fiesta-frentelateral-esquerda.jpg" style="width: 100%" alt="FOTO">
+            <img id="foto3" src="" style="width: 100%" alt="FOTO">
         </div>
         <div class="mySlides">
             <div class="numbertext">4/6</div>
-            <img src="midia/fiesta-frente-dir.jpg" style="width: 100%" alt="FOTO">
+            <img id="foto4" src="" style="width: 100%" alt="FOTO">
         </div>
         <div class="mySlides">
             <div class="numbertext">5/6</div>
-            <img src="midia/fiesta-rodaesquerda.jpg" style="width: 100%" alt="FOTO">
+            <img id="foto5" src="" style="width: 100%" alt="FOTO">
         </div>
         <div class="mySlides">
             <div class="numbertext">6/6</div>
-            <img src="midia/fiesta-trazeira.jpg" style="width: 100%" alt="FOTO">
+            <img id="foto6" src="" style="width: 100%" alt="FOTO">
         </div>
 
           <!-- Next and previous buttons -->
@@ -213,40 +213,46 @@
           <!--Thumbnail images-->
         <div class="row">
             <div class="column">
-                <img src="midia/fiesta20.jpg" class="demo cursor" style="width: 100%" onclick="currentSlide(1)" alt="">
+                <img id="thumb1" src="" class="demo cursor" style="width: 100%" onclick="currentSlide(1)" alt="">
             </div>
             <div class="column">
-                <img src="midia/fiesta-frente-dir.jpg" class="demo cursor" style="width: 100%" onclick="currentSlide(2)" alt="">
+                <img id="thumb2" src="" class="demo cursor" style="width: 100%" onclick="currentSlide(2)" alt="">
             </div>
             <div class="column">
 
-                <img src="midia/fiesta-frentelateral-esquerda.jpg" class="demo cursor" style="width: 100%" onclick="currentSlide(3)" alt="">
+                <img id="thumb3" src="" class="demo cursor" style="width: 100%" onclick="currentSlide(3)" alt="">
             </div>
             <div class="column">
-                <img src="midia/fiesta-frente-dir.jpg" class="demo cursor" style="width: 100%" onclick="currentSlide(4)" alt="">
+                <img id="thumb4" src="" class="demo cursor" style="width: 100%" onclick="currentSlide(4)" alt="">
             </div>
             <div class="column">
-                <img src="midia/fiesta-rodaesquerda.jpg" class="demo cursor" style="width: 100%" onclick="currentSlide(5)" alt="">
+                <img id="thumb5" src="" class="demo cursor" style="width: 100%" onclick="currentSlide(5)" alt="">
             </div>
             <div class="column">
-                <img src="midia/fiesta-trazeira.jpg" class="demo cursor" style="width: 100%" onclick="currentSlide(6)" alt="">
+                <img id="thumb6" src="" class="demo cursor" style="width: 100%" onclick="currentSlide(6)" alt="">
             </div>
         </div>
     </div>
     <aside id="car-info">
         <div class="car-details">
-            <p>carro</p>
+            <p>Ford New Fiesta Hatch 2020</p>
+        </div>
+        <div id="valor" class="car-details">
+            <p>teste</p>
         </div>
         <div class="car-details">
-            <p>preço</p>
+            <p>Ano</p><br>
+            <p>2020</p>
         </div>
-        <div class="car-details">
-            <p>ano etc</p>
-        </div>
-        <div class="car-details">
-            <p>tenho interesse em comprar esse carro</p>
+        <div id="testeclass" class="car-details">
+            
+            <p>tenho interesse em comprar esse carro</p>    
+            
         </div>
     </aside>
+    
     <script src="slidecontrol.js"></script>
+    
+    
 </body>
 </html>
