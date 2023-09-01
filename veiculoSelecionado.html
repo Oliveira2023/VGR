@@ -26,11 +26,12 @@
         /*Position the image container (needed to position the left and right arrows*/
         .container {
             position: relative;
-            margin: auto 30px 30px 30px;
+            margin: auto 15px 15px 15px;
             border: 1px solid blanchedalmond;
-            width: 60%;
+            width: 55%;
             float: left;
             display: block;
+            border-radius: 10px 10px 0px 0px;
         }
 
         /* Hide the images by default */
@@ -42,7 +43,7 @@
             
         }
         .mySlides img {
-            
+            border-radius: 10px;
             max-height: 400px;
             object-fit: contain;
             margin-bottom: -2.7px;
@@ -137,15 +138,51 @@
             color: white;
             float: left;
             width: 35%;
-            background-color: rgb(68, 59, 193);
-            min-height: 545px;
+            
+            max-height: 545px;
+            margin: 15px;
+            
         }
-        #car-info:first-child{
-            height: 150px;
-        }
+
         .car-details {
             min-height: 75px;
             border: 1px solid white;
+            padding: 15px;
+            width: 100%;
+            border-radius: 15px;
+            margin: 5px 0px;
+            
+        }
+
+        #nomeVeiculo{
+            font-size: large;
+            font-weight: 550;
+        }
+
+        #kmVeiculo{
+            font-size: 0.8em;
+            margin: 5px;
+            padding-top: 10px;
+        }
+
+        #valorVeiculo{
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: 800;
+        }
+        #valorVeiculo span{
+            font-size: 0.8em;
+            font-weight: 400;
+        }
+
+        #anoVeiculo{
+            padding-top: 15px;
+            font-size: 1.2em;
+            font-weight: 800;
+        }
+
+        #lastDetail{
+            min-height: 100px;
         }
 
 
@@ -235,19 +272,21 @@
     </div>
     <aside id="car-info">
         <div class="car-details">
-            <p>Ford New Fiesta Hatch 2020</p>
-        </div>
-        <div id="valor" class="car-details">
-            <p>teste</p>
+            <p id="nomeVeiculo"></p>
+            <p id="kmVeiculo"></p>
         </div>
         <div class="car-details">
-            <p>Ano</p><br>
-            <p>2020</p>
+            <p id="valorVeiculo"></p>
         </div>
-        <div id="testeclass" class="car-details">
-            
-            <p>tenho interesse em comprar esse carro</p>    
-            
+        <div class="car-details">
+            <p></p>Ano<br>
+            <p id="anoVeiculo"></p>
+        </div>
+        <div class="car-details">
+            <p id="transmissaoVeiculo"></p>    
+        </div>
+        <div id="lastDetail" class="car-details">
+            <p id="detalhesVeiculo"></p>    
         </div>
     </aside>
     

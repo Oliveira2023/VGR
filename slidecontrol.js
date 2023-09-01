@@ -1,7 +1,11 @@
 let veiculo1 = {
     nome: 'Ford New Fiesta Hatch 2020',
-    ano: 2020,
+    km: "38.531",
+    local: "São Paulo",
+    year: 2020,
     valor: "42000,00",
+    transmissao: 'Transmissão manual',
+    details: 'Faça uma simulação de acordo com suas preferências e escolha o número de parcelas convenientes para você.',
     slide1: 'midia/fiesta20red600.jpg',
     slide2: "midia/fiesta-frente-dir.jpg",
     slide3: "midia/fiesta-frentelateral-esquerda.jpg",
@@ -17,9 +21,13 @@ let veiculo1 = {
 }
 
 let veiculo2 = {
-    nome: 'Onix',
-    ano: 2021,
-    valor: 'R$ 54.000,00',
+    nome: 'Hyundai Hb20 EVOLUTION',
+    km: "38.531",
+    local: "São Paulo",
+    year: 2018,
+    valor: '65.199,00',
+    transmissao: 'Transmissão manual',
+    details: 'Faça uma simulação de acordo com suas preferências e escolha o número de parcelas convenientes para você.',
     slide1: 'midia/hb20frente600x400.jpg',
     slide2: 'midia/hb20Painel600x400.jpg',
     slide3: 'midia/hb20LatDir600x400.jpg',
@@ -95,6 +103,20 @@ thumb5.setAttribute('src', veiculo.thumb5)
 let thumb6 = document.querySelector('#thumb6')
 thumb6.setAttribute('src', veiculo.thumb6)
 
+// Detalhes do carro
+
+let nomeCarro = document.querySelector('#nomeVeiculo')
+nomeCarro.innerHTML = veiculo.nome
+let preco = document.querySelector('#valorVeiculo')
+preco.innerHTML = "<span>R$</span> " + veiculo.valor
+let ano = document.querySelector('#anoVeiculo')
+ano.innerHTML = veiculo.year
+let transmissao = document.querySelector('#transmissaoVeiculo')
+transmissao.innerHTML = veiculo.transmissao
+let detahes = document.querySelector('#detalhesVeiculo')
+detahes.innerHTML = veiculo.details
+let quilometragem = document.querySelector('#kmVeiculo')
+quilometragem.innerHTML = veiculo.km + "km" + " - " + veiculo.local
 
 //codigo do slide control//
 let slideIndex = 1
