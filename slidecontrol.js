@@ -44,8 +44,6 @@ let veiculo2 = {
     thumb6: 'midia/hb20Traz600x400.jpg'
 }
 
-
-console.log('load carro selecionado')
 let veiculoSelecionado = sessionStorage.getItem('carro')
 
 //car-1
@@ -53,8 +51,7 @@ let nVeiculo = veiculoSelecionado.split('-')[1]
 let veiculo = 'veiculo' + nVeiculo
 let imagem = 'imagem' + nVeiculo
 let slide = 'slide' + nVeiculo
-console.log('N:', nVeiculo)
-console.log(veiculo=='veiculo1')
+
 if (veiculo=='veiculo1'){veiculo=veiculo1}
 if (veiculo=='veiculo2'){veiculo=veiculo2}
 if (veiculo=='veiculo3'){veiculo=veiculo3}
