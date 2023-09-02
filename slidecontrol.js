@@ -3,6 +3,7 @@ let veiculo1 = {
     km: "38.531",
     local: "São Paulo",
     year: 2020,
+    fipe: '45.000,00',
     valor: "42000,00",
     transmissao: 'Transmissão manual',
     details: 'Faça uma simulação de acordo com suas preferências e escolha o número de parcelas convenientes para você.',
@@ -25,6 +26,7 @@ let veiculo2 = {
     km: "38.531",
     local: "São Paulo",
     year: 2018,
+    fipe: '67.000,00',
     valor: '65.199,00',
     transmissao: 'Transmissão manual',
     details: 'Faça uma simulação de acordo com suas preferências e escolha o número de parcelas convenientes para você.',
@@ -117,6 +119,8 @@ let detahes = document.querySelector('#detalhesVeiculo')
 detahes.innerHTML = veiculo.details
 let quilometragem = document.querySelector('#kmVeiculo')
 quilometragem.innerHTML = veiculo.km + "km" + " - " + veiculo.local
+let fipeVeiculo = document.querySelector('#fipeVeiculo')
+fipeVeiculo.innerHTML = "<span>Fipe: R$</span> " + veiculo.fipe
 
 //codigo do slide control//
 let slideIndex = 1

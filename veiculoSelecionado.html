@@ -7,6 +7,7 @@
     <link rel="icon" href="favicon2.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/mobileVS.css">
     <!-- #F7941D   -->
     <style>
         * {
@@ -138,10 +139,8 @@
             color: white;
             float: left;
             width: 35%;
-            
             max-height: 545px;
             margin: 15px;
-            
         }
 
         .car-details {
@@ -182,7 +181,11 @@
         }
 
         #lastDetail{
-            min-height: 100px;
+            font-style: oblique;
+        }
+        #boton{
+            border-radius: 10px;
+            padding: 5px;
         }
 
 
@@ -276,6 +279,7 @@
             <p id="kmVeiculo"></p>
         </div>
         <div class="car-details">
+            <p id="fipeVeiculo">Fipe:</p>
             <p id="valorVeiculo"></p>
         </div>
         <div class="car-details">
@@ -287,6 +291,9 @@
         </div>
         <div id="lastDetail" class="car-details">
             <p id="detalhesVeiculo"></p>    
+        </div>
+        <div>
+            <a href="https://wa.me/5511963591532"><button id="boton">Fale conosco</button></a>
         </div>
     </aside>
     
