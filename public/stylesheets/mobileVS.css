@@ -5,13 +5,19 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body {
+body{
     
 }
+
 h1 {
     
     margin-left: 30px;
     padding: 10px;
+    
+}
+#principalVS{
+    display:inline-block;
+    width: 100%;
     
 }
 /*Position the image container (needed to position the left and right arrows*/
@@ -125,7 +131,7 @@ margin: 0px auto;
 .active, .demo:hover {
     opacity: 1;
 }
-#car-info {
+#info-aside {
     color: white;
     float: left;
     width: 35%;

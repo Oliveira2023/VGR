@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veiculosvgr</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="icon" href="favicon2.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poltawski+Nowy:wght@600&display=swap');
+
+        body{
+            /*position: relative;*/
+            min-height: 100vh;
+            background: url('midia/carropreto.jpg');
+        }
+        h1 {
+            text-align: center;
+            color: #005D99;
+            font-size: 1.8em;
+            margin: 10px 0 5px 0;
+            text-shadow: 4px 3px 3px black;
+        }
+        form {
+            /*left: 50%;*/
+            /*position: absolute;*/
+            /* position: relative; */
+            min-height: 300px;
+            padding: 10px;
+            margin: 10px auto 20px auto;
+            /* background-color: #f2c28877; */
+            width: 80%;
+            text-align: left;
+            /*transform: translate(-50%);*/
+        }
+        form div{
+            width: 75%;
+            margin: auto;
+        }
+        form div input{
+            /* position: absolute; */
+            width: 100%;
+            border-top: none transparent;
+            border-right: none transparent;
+            border-left: none transparent;
+            border-bottom: 1px solid #8e98a2;
+            padding: 10px;
+        }
+        #msg{
+            margin-top: 10px;
+            width: 100%;
+            padding: 10px;
+        }
+        #submit, #cancel{
+            left: 35px;
+            width: 80px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+        #submit:hover, #cancel:hover{
+            background-color: rgb(71, 112, 201);
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <%- include("includes/header") -%>
+
+    <h1>Ficha de Compra ou Venda</h1>
+    
+    <form action="send" method="post" autocomplete="on">
+        <div>
+            <label for="veiculo">Veículo:</label>
+            <input type="text" name="veiculo" id="veiculo">
+        </div>
+        <div>
+            <label for="valor">Valor:</label>
+            <input type="text" name="valor" id="valor">
+        </div>
+
+        <div>
+            <label for="name">Nome Completo:</label>
+            <input type="text" name="nome" id="name">
+        </div>
+        <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" name="email" id="mail">
+        </div>
+        <div>
+            <label for="fone">Telefone:</label>
+            <input type="tel" name="tel" id="fone">
+        </div>
+        <div>
+            <label for="nasc">Data de Nascimento:</label>
+            <input type="text" name="nasc" id="nasc">
+        </div>
+        <div>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf">
+        </div>
+        <div>
+            <label for="msg">Digite sua Mensagem:</label>
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input id="submit" type="submit" value="Enviar">
+            <input id="cancel" type="reset" value="Cancelar">
+        </div>
+
+    </form>
+
+    <%- include("includes/footer") -%>
+
+</body>
+</html>
