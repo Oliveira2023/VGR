@@ -37,7 +37,7 @@ body {
     display: inline-block;
     text-decoration: none;
     transition: background .4s;
-    
+    background-color: rgba(128, 128, 128, 0.432);
 }
 #menuList ul li a:hover {
     background-color: rgb(71, 112, 201);
