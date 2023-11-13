@@ -1,0 +1,22 @@
+npm install -g firebase-tools
+
+pra fazer login no google
+
+firebase login
+
+e iniciar o projeto:
+
+firebase init
+
+especificar o site:
+{
+	"hosting": {
+	"site": "vgr-veiculos-2023",
+	"public": "public",
+	...
+	}
+}
+
+incluir os arquivos HTML, CSS JS e:
+
+firebase deploy --only hosting:vgr-veiculos-2023
